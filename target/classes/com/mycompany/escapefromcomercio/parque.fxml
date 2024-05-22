@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.escapefromcomercio.ParqueController">
+   <children>
+      <ImageView fx:id="imageRF" fitHeight="221.0" fitWidth="343.0" layoutX="136.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@RF.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="215.0" layoutY="264.0" text="Vas hacia el parque de la Ribera" />
+      <Button fx:id="BtnBack" layoutX="14.0" layoutY="324.0" mnemonicParsing="false" onAction="#SwitchToinicio" prefHeight="25.0" prefWidth="130.0" text="Volver" />
+      <Button fx:id="BtnPaseo" layoutX="151.0" layoutY="324.0" mnemonicParsing="false" onAction="#SwitchToPR" prefHeight="25.0" prefWidth="130.0" text="Pasear por el parque" />
+      <Button fx:id="BtnSearch" layoutX="320.0" layoutY="324.0" mnemonicParsing="false" onAction="#Search" prefHeight="25.0" prefWidth="130.0" text="Buscar" />
+      <Button fx:id="BtnExit" layoutX="456.0" layoutY="324.0" mnemonicParsing="false" onAction="#Exit" prefHeight="25.0" prefWidth="130.0" text="Salir" />
+      <Label fx:id="Lrf" alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="289.0" prefHeight="17.0" prefWidth="201.0" textAlignment="CENTER" />
+      <Label fx:id="Ldinero" alignment="CENTER" contentDisplay="CENTER" layoutX="277.0" layoutY="14.0" text="Dinero: 0" />
+   </children>
+</AnchorPane>
