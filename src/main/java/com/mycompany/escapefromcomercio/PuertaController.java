@@ -34,7 +34,7 @@ public class PuertaController {
     void AVBike(ActionEvent event) throws IOException {
         contador++;
         if (contador == 1) {
-            Image img = new Image("com/mycompany/escapefromcomercio/AVBike.jpg");
+            Image img = new Image("com/mycompany/escapefromcomercio/assets/AVBike.jpg");
             ImgPuerta.setImage(img);
             Ltexto.setText("mmmmm... Robable");
             BtnAVBike.setText("Robar");

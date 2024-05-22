@@ -11,13 +11,13 @@
    <children>
       <ImageView fitHeight="224.0" fitWidth="367.0" layoutX="132.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@povBici.jpg" />
+            <Image url="@assets/povBici.jpg" />
          </image>
       </ImageView>
       <Label layoutX="56.0" layoutY="19.0" text="Antoniovallez recordará esto" />
       <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@AV.png" />
+            <Image url="@assets/AV.png" />
          </image>
       </ImageView>
       <Label layoutX="192.0" layoutY="339.0" text="Hoy no hay clase de FOL">
@@ -27,7 +27,7 @@
       </Label>
       <ImageView fitHeight="46.0" fitWidth="336.0" layoutX="168.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@gta.png" />
+            <Image url="@assets/gta.png" />
          </image>
       </ImageView>
       <Button fx:id="BtnReplay" layoutX="487.0" layoutY="15.0" mnemonicParsing="false" onAction="#SwitchToPrimary" prefHeight="30.0" prefWidth="90.0" text="Volver a jugar" />

@@ -10,7 +10,7 @@
    <children>
       <ImageView fx:id="imageRF" fitHeight="221.0" fitWidth="343.0" layoutX="136.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@RF.jpg" />
+            <Image url="@assets/RF.jpg" />
          </image>
       </ImageView>
       <Label layoutX="215.0" layoutY="264.0" text="Vas hacia el parque de la Ribera" />

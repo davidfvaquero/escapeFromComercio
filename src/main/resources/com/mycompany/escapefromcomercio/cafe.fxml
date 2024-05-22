@@ -10,7 +10,7 @@
    <children>
       <ImageView fx:id="ImgBar" fitHeight="286.0" fitWidth="382.0" layoutX="109.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@manhattan.jpg" />
+            <Image url="@assets/manhattan.jpg" />
          </image>
       </ImageView>
       <Button fx:id="BtnBack" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#SwitchToInicio" prefHeight="25.0" prefWidth="130.0" text="Volver" />

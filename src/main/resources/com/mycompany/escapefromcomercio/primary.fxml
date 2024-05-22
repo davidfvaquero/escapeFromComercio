@@ -12,7 +12,7 @@
       <Label text="Bienvenido a Escape from Comercio" />
       <ImageView fitHeight="212.0" fitWidth="393.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@LogoComercio.png" />
+            <Image url="@assets/LogoComercio.png" />
          </image>
       </ImageView>
       <Button fx:id="BtnStart" onAction="#switchToSecondary" text="Comenzar" />

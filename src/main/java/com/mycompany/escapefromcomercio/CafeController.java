@@ -82,8 +82,8 @@ public class CafeController {
      * sino se desactiva
      */
     private void refresh() {
-        Image imgBroke = new Image("com/mycompany/escapefromcomercio/cartera.jpg");
-        Image imgCash = new Image("com/mycompany/escapefromcomercio/manhattan.jpg");
+        Image imgBroke = new Image("com/mycompany/escapefromcomercio/assets/cartera.jpg");
+        Image imgCash = new Image("com/mycompany/escapefromcomercio/assets/manhattan.jpg");
 
         Lcash.setText("Dinero: " + cash);
         if (cash == 0) {

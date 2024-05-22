@@ -6,12 +6,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.mycompany.escapefromcomercio.PuertaController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.escapefromcomercio.PuertaController">
    <children>
       <ImageView fx:id="ImgPuerta" fitHeight="281.0" fitWidth="420.0" layoutX="90.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@puerta.jpg" />
+            <Image url="@assets/puerta.jpg" />
          </image>
       </ImageView>
       <Label fx:id="Ltexto" alignment="CENTER" contentDisplay="CENTER" layoutX="217.0" layoutY="29.0" text="Estás en la puerta del Comercio" textAlignment="CENTER" />

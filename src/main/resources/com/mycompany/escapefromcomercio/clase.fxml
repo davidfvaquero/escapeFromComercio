@@ -11,7 +11,7 @@
    <children>
       <ImageView fitHeight="261.0" fitWidth="458.0" layoutX="72.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@clase.jpg" />
+            <Image url="@assets/clase.jpg" />
          </image>
       </ImageView>
       <Label layoutX="233.0" layoutY="33.0" text="A estudiar">

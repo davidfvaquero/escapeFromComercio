@@ -11,7 +11,7 @@
       <Label layoutX="172.0" layoutY="35.0" text="Se está acabando el recreo y tienes clase de FOL" />
       <ImageView fitHeight="242.0" fitWidth="368.0" layoutX="116.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@comercio.jpg" />
+            <Image url="@assets/comercio.jpg" />
          </image>
       </ImageView>
       <Button fx:id="BtnPuerta" layoutX="14.0" layoutY="316.0" mnemonicParsing="false" onAction="#SwtichToPuerta" prefHeight="25.0" prefWidth="130.0" text="Ir a la puerta" />
