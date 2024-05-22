@@ -85,6 +85,9 @@ public class ParqueController {
         App.setRoot("inicio");
     }
 
+    /**
+     * Metodo que lee un numero de un fichero
+     */
     private void leerFichero() {
         String linea;
 

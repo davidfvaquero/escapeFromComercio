@@ -76,10 +76,15 @@ public class CafeController {
         App.setRoot("inicio");
     }
 
+    /**
+     * Metodo para comprobar qué imagen hay que mostrar y la disponibilidad del
+     * botón "BtnCafe". Si se tiene dinero (cash > 0) el botón está activado,
+     * sino se desactiva
+     */
     private void refresh() {
         Image imgBroke = new Image("com/mycompany/escapefromcomercio/cartera.jpg");
         Image imgCash = new Image("com/mycompany/escapefromcomercio/manhattan.jpg");
-        
+
         Lcash.setText("Dinero: " + cash);
         if (cash == 0) {
             BtnCafe.setDisable(true);
@@ -90,6 +95,12 @@ public class CafeController {
         }
     }
 
+    /**
+     * Metodo que lee un numero de un fichero
+     *
+     * @param name String con el nombre del fichero
+     * @return int con la cifra que hay en el fichero
+     */
     int leerFichero(String name
     ) {
         try {
@@ -105,6 +116,11 @@ public class CafeController {
         return cash;
     }
 
+    /**
+     * Metodo que escribe en un fichero
+     *
+     * @param name String con el nombre del fichero
+     */
     void escribirFichero(String name
     ) {
         try {

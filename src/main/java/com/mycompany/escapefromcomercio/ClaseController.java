@@ -26,6 +26,11 @@ public class ClaseController {
         escribirFichero("cuentas.txt");
     }
 
+    /**
+     * Metodo que escribe en un fichero
+     *
+     * @param name String con el nombre del fichero
+     */
     void escribirFichero(String name
     ) {
         try {

@@ -28,6 +28,12 @@ public class ParqueRiberaController {
         escribirFichero("cuentas.txt");
     }
 
+    /**
+     * Metodo que escribe un 0 en un fichero. Se usa para renovar el dinero que
+     * se tiene al volver a la pantalla de titulo
+     *
+     * @param name String con el nombre del fichero
+     */
     void escribirFichero(String name
     ) {
         try {
