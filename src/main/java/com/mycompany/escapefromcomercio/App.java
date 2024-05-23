@@ -30,7 +30,7 @@ public class App extends Application {
         f.createNewFile();
         bw.write("0");
         bw.close();
-        scene = new Scene(loadFXML("combate"), 600, 400);
+        scene = new Scene(loadFXML("primary"), 600, 400);
         stage.setScene(scene);
         stage.show();
     }

@@ -13,57 +13,59 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
 public class ParqueController {
-
+    
     private int dinero;
-
+    
     @FXML
     private Button BtnBack;
-
+    
     @FXML
     private Button BtnExit;
-
+    
     @FXML
     private Button BtnPaseo;
-
+    
     @FXML
     private Label Ldinero;
-
+    
     @FXML
     private Label Lrf;
-
+    
     @FXML
     private ImageView imageRF;
-
+    
     @FXML
     private Button BtnSearch;
-
+    
     @FXML
     void Exit(ActionEvent event) {
         System.exit(0);
     }
-
+    
     @FXML
     public void initialize() {
         leerFichero();
-
+        
         Ldinero.setText("Dinero: " + String.valueOf(dinero));
     }
-
+    
     @FXML
-    void Search(ActionEvent event) {
+    void Search(ActionEvent event) throws IOException {
         Random rnd = new Random();
-
+        
         leerFichero();
-
+        
         int numAleatorio = rnd.nextInt(100);
-
-        if (numAleatorio < 70) {
+        
+        if (numAleatorio < 55) {
             Lrf.setText("No encuentras nada");
-        } else {
+        } else if (numAleatorio >= 55 && numAleatorio <= 90) {
             Lrf.setText("Encuentras una moneda de euro");
             dinero++;
+        } else {
+            App.setRoot("combate");
         }
-
+        
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter("cuentas.txt", false));
             bw.write(String.valueOf(dinero));
@@ -71,15 +73,15 @@ public class ParqueController {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-
+        
         Ldinero.setText("Dinero: " + String.valueOf(dinero));
     }
-
+    
     @FXML
     void SwitchToPR(ActionEvent event) throws IOException {
         App.setRoot("parqueRibera");
     }
-
+    
     @FXML
     void SwitchToinicio(ActionEvent event) throws IOException {
         App.setRoot("inicio");
@@ -90,13 +92,13 @@ public class ParqueController {
      */
     private void leerFichero() {
         String linea;
-
+        
         try {
             FileReader fr = new FileReader("cuentas.txt");
             BufferedReader br = new BufferedReader(fr);
-
+            
             linea = br.readLine();
-
+            
             if (linea != null) {
                 this.dinero = Integer.parseInt(linea);
             } else {

@@ -25,7 +25,7 @@
             <Image url="@assets/WWdog.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="Linfo" alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="253.0" text="dvjsadñf&#10;fjasñdlfas&#10;asdjlfñk&#10;" textAlignment="CENTER" />
+      <Label fx:id="Linfo" alignment="CENTER" contentDisplay="CENTER" layoutX="253.0" layoutY="235.0" text="Te encuentas con&#10;un perro&#10;" textAlignment="CENTER" />
       <Button fx:id="BtnPet" layoutX="14.0" layoutY="324.0" mnemonicParsing="false" onAction="#Pet" prefHeight="26.0" prefWidth="90.0" text="Acariciar" />
       <Button fx:id="BtnStick" layoutX="137.0" layoutY="323.0" mnemonicParsing="false" onAction="#Throw" prefHeight="26.0" prefWidth="90.0" text="Tirar palo" />
       <Button fx:id="BtnGoslingLook" layoutX="354.0" layoutY="323.0" mnemonicParsing="false" onAction="#GoslingLook" prefHeight="26.0" prefWidth="108.0" text="Mirada Gosling®" />

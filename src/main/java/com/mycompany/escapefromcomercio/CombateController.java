@@ -2,7 +2,6 @@ package com.mycompany.escapefromcomercio;
 
 import java.io.IOException;
 import java.util.Random;
-import java.util.Scanner;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -47,6 +46,7 @@ public class CombateController {
                 ex.printStackTrace();
             }
         }
+        perro();
     }
 
     @FXML
@@ -59,6 +59,7 @@ public class CombateController {
                 ex.printStackTrace();
             }
         }
+        perro();
     }
 
     @FXML
@@ -71,24 +72,38 @@ public class CombateController {
                 ex.printStackTrace();
             }
         }
+        perro();
     }
 
-    // Crashea muy fuerte no se que es
     @FXML
     void TryFlee(ActionEvent event) throws IOException {
-        // Se queda comentado de momento
 
         int n = rnd.nextInt(10);
-        if (n > 10) {
+        if (n > 0) {
             Linfo.setText("Consigues huir!" + "\n\n" + "Buena suerte y veamos si llegas a clase a tiempo");
-            App.setRoot("parque");
+            Cgano();
         } else {
             Linfo.setText("El perro es más " + "\n" + "rápido y no te permite escapar");
         }
+        perro();
     }
 
     void Cgano() throws IOException {
         Lwin.setVisible(true);
         App.setRoot("parque");
+    }
+
+    void perro() {
+        int ataquePerro = rnd.nextInt(100);
+        if (ataquePerro <= 40) {
+            Linfo.setText("El perro " + "\n" + "te mira intimidante");
+            PBme.setProgress(PBme.getProgress() - 0.1);
+        } else if (ataquePerro > 40 && ataquePerro <= 70) {
+            Linfo.setText("El perro te ladra");
+            PBme.setProgress(PBme.getProgress() - 0.1875);
+        } else {
+            Linfo.setText("El perro" + "\n" + " te mea la zapatilla");
+            PBme.setProgress(PBme.getProgress() - 0.25);
+        }
     }
 }
