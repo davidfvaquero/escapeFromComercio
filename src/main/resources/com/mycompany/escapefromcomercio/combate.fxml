@@ -20,7 +20,7 @@
             <Font size="35.0" />
          </font>
       </Label>
-      <ImageView fitHeight="214.0" fitWidth="214.0" layoutX="25.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="ImgPerro" fitHeight="214.0" fitWidth="214.0" layoutX="25.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets/WWdog.jpg" />
          </image>

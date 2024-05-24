@@ -7,6 +7,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class CombateController {
 
@@ -23,6 +25,9 @@ public class CombateController {
 
     @FXML
     private Button BtnStick;
+
+    @FXML
+    private ImageView ImgPerro;
 
     @FXML
     private Label Linfo;
@@ -78,8 +83,8 @@ public class CombateController {
     @FXML
     void TryFlee(ActionEvent event) throws IOException {
 
-        int n = rnd.nextInt(10);
-        if (n > 0) {
+        int n = rnd.nextInt(100);
+        if (n > 59) {
             Linfo.setText("Consigues huir!" + "\n\n" + "Buena suerte y veamos si llegas a clase a tiempo");
             Cgano();
         } else {
@@ -104,6 +109,11 @@ public class CombateController {
         } else {
             Linfo.setText("El perro" + "\n" + " te mea la zapatilla");
             PBme.setProgress(PBme.getProgress() - 0.25);
+        }
+        if (PBdog.getProgress() <= 0.25) {
+            Image img = new Image("com/mycompany/escapefromcomercio/assets/bigPerro.jpg");
+            ImgPerro.setImage(img);
+            Linfo.setText("El perro" + "\n" + "muestra su" + "\n" + "verdadera forma");
         }
     }
 }
